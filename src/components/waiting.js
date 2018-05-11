@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './css/detail.css';
+import DetailButton from './confirm';
 const data = [
     { name: 'test', id: 'xxxxxxxx', description: '他被广泛应用于各种电子电路实验中'},
     { name: 'test', id: 'xxxxxxxx', description: '他被广泛应用于各种电子电路实验中'},
@@ -24,7 +25,7 @@ class Waiting extends React.Component {
                         <div className={style.listItem}>{item.description}</div>
                     </div>
                     <div className={style.listRight}>
-                        <div className={style.rightDetail}>预约</div>
+                        <DetailButton />
                     </div>
                 </div>
             )

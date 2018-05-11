@@ -38,7 +38,8 @@
     display: -ms-flexbox;
     letter-spacing: 1px;
     display: flex;
-    color: #fff;
+    color: black;
+    min-height: 100px;
     background: rgb(103,183,234);
     border-bottom: 1px solid #fff;
 }
