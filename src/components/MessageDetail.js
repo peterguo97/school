@@ -1,5 +1,4 @@
 import React from 'react'
-import { Card } from 'antd-mobile';
 import girl from '../assets/girl.jpg';
 import style from './css/message.css';
 

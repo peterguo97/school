@@ -1,16 +1,20 @@
 import React from 'react';
-import { connect } from 'dva';
-import Footer from '../components/footer';
+import IndexFooter from '../components/IndexFooter';
+import IndexTitle from '../components/IndexTitle';
 
-function IndexPage() {
-  return (
-    <div style={{height: '100%'}}>
-      <Footer />
-    </div>
-  );
+class IndexPage extends React.Component {
+  render(){
+    return(
+      <div style={{ width: '100%'}}>
+        <IndexTitle />
+          {this.props.children}
+        <IndexFooter />
+      </div>
+    )
+  }
 }
 
 IndexPage.propTypes = {
 };
 
-export default connect()(IndexPage);
+export default IndexPage;

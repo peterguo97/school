@@ -1,5 +1,6 @@
 .wrapper {
     width: 100%;
+    margin-top: 43px;
 }
 
 .title {
@@ -15,13 +16,13 @@
 }
 
 .messageWrap {
-    width: 100%;
+    width: 96%;
     height: 100px;
     display: flex;
+    margin-top: 42px;
     justify-content: space-between;
     align-items: center;
-    padding-left: 15px;
-    padding-right: 15px; 
+    padding: 0 2%; 
 }
 
 .userImage {

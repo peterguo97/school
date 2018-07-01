@@ -1,13 +1,16 @@
 import React from 'react';
 import { Router, Route, Switch } from 'dva/router';
 import IndexPage from './routes/IndexPage';
+import Message from './components/Message';
 
 function RouterConfig({ history }) {
   return (
     <Router history={history}>
-      <Switch>
-        <Route path="/" exact component={IndexPage} />
-      </Switch>
+      <IndexPage>
+        <Switch>
+          <Route path="/notice" component={Message} />
+        </Switch>
+      </IndexPage>
     </Router>
   );
 }
