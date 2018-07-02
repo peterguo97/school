@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './css/message.css';
+import common from './css/detail.css';
 import MessageDetail from './MessageDetail';
 // import axios from 'axios';
 
@@ -13,7 +13,7 @@ class Message extends React.Component {
     
     render(){
         return(
-            <div className={style.wrapper}>
+            <div className={common.wrapper}>
                 <MessageDetail />
             </div>
         )

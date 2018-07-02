@@ -8,7 +8,7 @@ import style from './css/detail.css';
 import { Link } from 'dva/router';
 
 const tabs = [
-    { src: talking, sub: '1',title: 'talking', to: '/talking' },
+    { src: talking, sub: '1',title: 'talking', to: '/' },
     { src: search , sub: '2',title: 'search', to: '/search' },
     { src: plus , sub: '3',title: 'plus', to: '/plus' },
     { src: notice , sub: '4',title: 'notice', to: '/notice' },

@@ -26,6 +26,10 @@
     bottom: 0;
 }
 
+.wrapper {
+  width: 100%;
+}
+
 .title {
     width: 96%;
     height: 40px;

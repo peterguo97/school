@@ -19,10 +19,9 @@
     width: 96%;
     height: 100px;
     display: flex;
-    margin-top: 42px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2%; 
+    padding: 0 2%;
 }
 
 .userImage {
@@ -33,7 +32,7 @@
 .userImage img {
     width: 80px;
     height: 80px;
-  border-radius: 40px;
+    border-radius: 40px;
 }
 
 .content {
