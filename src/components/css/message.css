@@ -18,6 +18,8 @@
 .messageWrap {
     width: 96%;
     height: 100px;
+    background: #fff;
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
