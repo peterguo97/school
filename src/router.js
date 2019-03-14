@@ -1,22 +1,26 @@
-import { Router, Route, Switch } from 'dva/router';
-import MyMessage from './routes/Message';
-import MyForum from './routes/Forum';
-import MySearch from './routes/Search';
-import Person from './routes/Person/myperson';
-import ChangeMessage from "./routes/Person/changeMessage";
+import React from 'react';
+import {
+  HashRouter as Router, Switch, Route,
+} from 'react-router-dom';
+import HomePage from 'components/Layout';
+import BorrowList from './routes/BorrowList';
+import WrappedRegistrationForm from './routes/BorrowForm';
+import ArticleEditor from './routes/ArticleEditor';
+import ChangeImg from './routes/ChangeImg';
 
-function RouterConfig({ history }) {
+function App() {
   return (
-    <Router history={history}>
-      <Switch>
-        <Route path="/notice" component={MyMessage} />
-        <Route path="/" exact component={MyForum} />
-        <Route path="/search" component = {MySearch} />
-        <Route path="/me" component = {Person} />
-        <Route path="/change" component = {ChangeMessage} />
-      </Switch>
+    <Router>
+        <Switch>
+          <HomePage>
+            <Route path="/" exact component={BorrowList} />
+            <Route path="/detailrequest/:id" component={WrappedRegistrationForm} />
+            <Route path="/article" component={ArticleEditor} />
+            <Route path="/changeImg" component={ChangeImg} />
+          </HomePage>
+        </Switch>
     </Router>
   );
 }
 
-export default RouterConfig;
+export default App;
